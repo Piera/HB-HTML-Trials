@@ -1,0 +1,85 @@
+<html>
+
+<head>
+</head>
+
+<style>
+    body {
+        font-family: sans-serif;
+    }
+    div.inline {
+        display: inline-block;
+    }
+    /*need this to separate fancy list "columns"*/
+    div.tab {
+        width: 110px;
+    }
+
+    div#box_A {
+        width: 300px;
+        height: 200px;
+        background-color: #C8C8C8;   
+        position: absolute;
+        margin-left: 330px; 
+        padding: 4px;
+
+    }
+    div#box_B {
+        width: 320px;
+        height: 220px;
+        background-color: #C8C8C8;
+        position: absolute;
+        padding: 4px;
+    }
+
+</style>
+
+<body>
+    <h1>Columns!</h1>
+    <div id = "box_A">
+        <form>
+        <div>
+            <div class = "inline tab"><label for="my-input-name">Name</label></div>
+            <div class = "inline"><input type = "text" name = "my-input-name"></input></div>
+        </div>
+        <div>
+            <div class = "inline tab"><label for="my-input-age">Age</label></div>
+            <div class = "inline"><input type = "text" name = "my-input-age"></input></div>
+        </div>
+        <div>
+            <div class = "inline tab"><label for="my-dropdown-favorite-color">Favorite Color</label></div>
+            <div class = "inline">
+                <select>
+                    <option>magenta</option>
+                    <option>red</option>
+                    <option>green</option>
+                    <option>blue</option>
+                    <option>fuschia</option>
+                </select></div>
+        </div>
+        <div>
+            <div class = "inline tab">Love Music</div><input type="radio" name="music preference" value="Love Music">
+        </div>
+        <div>
+            <div class = "inline tab">Hate Music</div><input type="radio" name="music preference" value="Hate Music">
+        </div>
+        <div>
+            <div class = "inline tab">Is it raining?</div><input type="checkbox" name="rain status" value="Is it raining?">
+        </div>
+
+            <div><input type = "submit"></input></div>
+    </form>
+    </div>
+    <div id = "box_B">
+        <h2>Here is a list of things.</h2>
+        <ul>
+            <li>Banana.</li>
+            <li>Rabbit holes.</li>
+            <li>John Quincy Adams.</li>
+            <li>A sea serpent.</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
