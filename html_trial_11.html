@@ -7,6 +7,9 @@
     body {
         font-family: sans-serif;
     }
+    h1.littlepad {
+        padding:10px;
+    }
     div.inline1 {
         display: inline-block;
         background-color: #ccc;
@@ -22,11 +25,18 @@
         margin: 5;
         width: 142px;
         height: 100px;
-
+        position: absolute;
+        margin-top: 10px;
     }
 
     div.inline2b {
-
+        display: inline-block;
+        background-color: #ccc;
+        margin: 5;
+        width: 142px;
+        height: 75px;
+        margin-left: 157px;
+        margin-top: 10px;
     }
 
     div.horizontal {
@@ -41,31 +51,33 @@
     }
 
     div#box_A {
-        width: 300px;
-        height: 200px;
-        background-color: #C8C8C8;   
+        width: 290px;
+        height: 35px;
+        background-color: #ccc;   
         position: absolute;
-        margin-left: 330px; 
-        padding: 4px;
+        margin-left: 12px;
+        margin-top: 80px;
+        /*padding: 4px;*/
 
     }
     div#box_B {
-        width: 320px;
-        height: 220px;
-        background-color: #C8C8C8;
+        width: 290px;
+        height: 105px;
+        background-color: #ccc;
         position: absolute;
-        padding: 4px;
+        margin-left: 308px;
+        margin-top: 10px;
     }
 
 </style>
 
 <body>
-<h1>AAAAAAHHHHHH</h1>
+<h1 class="littlepad">AAAAAAHHHHHH</h1>
     <div class="horizontal"><div class = "inline1"></div><div class = "inline1"></div><div class = "inline1"></div>
     </div>
-    <div class="horizontal"><div class = "inline2a"></div>
+    <div class="horizontal"><div class = "inline2a"></div><div class = "inline2b"></div><div class="inline2a"></div><div class = "inline2b"></div>
     </div>
-    <div class ="horizontal">
+    <div class ="horizontal"><div id="box_A"></div> <div id="box_B"></div>
     </div>
    
 </body>
